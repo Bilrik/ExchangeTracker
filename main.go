@@ -36,6 +36,11 @@ type Stock struct {
 }
 
 func main() {
+	fmt.Println("This project runs on the Alpha Vantage API")
+	fmt.Println("If you do not already have an API key please visit:")
+	fmt.Println("https://www.alphavantage.co/support/#api-key")
+	fmt.Println()
+
 	tick, key := Auth()
 
 	getStockInfo(tick, key)
