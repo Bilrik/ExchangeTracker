@@ -45,7 +45,7 @@ func main() {
 
 	getStockInfo(tick, key)
 
-	for range time.Tick(time.Minute) {
+	for range time.Tick(time.Minute * 4) {
 		getStockInfo(tick, key)
 	}
 }
